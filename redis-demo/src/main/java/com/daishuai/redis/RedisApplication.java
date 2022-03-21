@@ -2,6 +2,7 @@ package com.daishuai.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @Description RedisDemo启动类
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @CreateTime 2022年03月20日 13:50:00
  * @Version 1.0.0
  */
+@EnableScheduling
 @SpringBootApplication
 public class RedisApplication {
 
