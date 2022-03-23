@@ -18,14 +18,15 @@
         <encoder>
             <pattern>%d{yyyy-MM-dd} %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%line] - %msg%n</pattern>
         </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!--文件路径-->
-            <fileNamePattern>${log.path}/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>${log.path}/%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <!--单个日志文件的大小-->
-            <totalSizeCap>1KB</totalSizeCap>
+            <maxFileSize>1KB</maxFileSize>
             <!--日志保留时间-->
             <maxHistory>7</maxHistory>
             <!--指定日志文件的上限大小，到了这个值，就会删除旧的日志-->
+            <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
     </appender>
 
