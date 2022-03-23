@@ -21,6 +21,8 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--文件路径-->
             <fileNamePattern>${log.path}/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--单个日志文件的大小-->
+            <totalSizeCap>1KB</totalSizeCap>
             <!--日志保留时间-->
             <maxHistory>7</maxHistory>
             <!--指定日志文件的上限大小，到了这个值，就会删除旧的日志-->
