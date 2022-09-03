@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * @Description RedisDemo启动类
- * @ClassName RedisApplication.java
- * @Author admin
- * @CreateTime 2022年03月20日 13:50:00
- * @Version 1.0.0
+ * @description RedisDemo启动类
+ * @className RedisApplication.java
+ * @author admin
+ * @createTime 2022年03月20日 13:50:00
+ * @version 1.0.0
  */
 @EnableScheduling
 @SpringBootApplication
