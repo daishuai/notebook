@@ -17,6 +17,7 @@
 
     <modules>
         <module>redis-demo</module>
+        <module>juc</module>
     </modules>
 
     <properties>
